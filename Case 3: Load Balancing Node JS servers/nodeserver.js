@@ -1,11 +1,8 @@
-// File /srv/server.js
 var http = require('http');
 
 function serve(ip, port)
 {
         http.createServer(function (req, res) {
-            res.writeHead(200, {'Content-Type': 'text/plain'});
-            res.write(JSON.stringify(req.headers));
             res.end("\nServer listening on port  "+ip+":"+port+"\n");
         }).listen(port, ip);
         console.log('Listening on port and IP  at http://'+ip+':'+port+'/');

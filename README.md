@@ -31,6 +31,9 @@ The reason for this approach using software load balancing is due to its scalabi
  2. Using python code to synthesize multiple application servers capable to run in any unused accessible port from terminal.
  
  3. Configuring the HAProxy.cfg file by opening in nano mode in terminal or creating a new one to implement load balancing alogorithm(RoundRobin used in this case) and declaring frontent,backend and stats nodes.
+ Algorithm Used
+    --> RoundRobin
+    --> Weighted Round Robin using ### Source IP hashing methodology.
 
  4.In the configuration file of HAProxy we need to exactly mention the port numbers for which we have spun the application servers.
 

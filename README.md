@@ -59,6 +59,6 @@ The reason for this approach using software load balancing is due to its scalabi
  
  2. HAProxy configuration and keepalived set up.
     
-
+## Case 3: Load Balancing Node JS servers using HAProxy 
  
  
